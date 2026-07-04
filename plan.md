@@ -77,7 +77,7 @@ switcharoo/
 ### Phase 4 - publish
 
 - [x] README with install instructions and the honest-limitations section (main loop is not auto-switched; that is by design and by ToS).
-- [x] `git init`, license (MIT). GitHub repo: pending (needs user's account).
+- [x] `git init`, license (MIT). GitHub repo: https://github.com/ShreyanshVaibhaw/switcharoo
 - [ ] Submit to a Claude Code plugin marketplace.
 
 ## Dogfooding / testing
