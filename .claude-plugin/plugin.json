@@ -1,0 +1,8 @@
+{
+  "name": "autotier",
+  "version": "0.1.0",
+  "description": "Model-tier routing for Claude Code Max users: pushes delegable subtasks to the cheapest capable model via pinned subagents, stretching your usage limits.",
+  "author": {
+    "name": "Ananya"
+  }
+}
