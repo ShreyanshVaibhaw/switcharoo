@@ -1,4 +1,4 @@
-# autotier - model-tier routing for Claude Code Max users
+# switcharoo - model-tier routing for Claude Code Max users
 
 ## Goal
 
@@ -40,7 +40,7 @@ Delegation rules for the main loop:
 ## File layout
 
 ```
-autotier/
+switcharoo/
   .claude-plugin/plugin.json      # plugin manifest
   agents/
     grunt.md                      # haiku - mechanical work
@@ -71,7 +71,7 @@ autotier/
 
 ### Phase 3 - receipts
 
-- [x] Log each delegation (agent, tier, token counts from the Task result) to `~/.claude/autotier.jsonl` via a PostToolUse hook (`hooks/hooks.json` + `scripts/log-delegation.js`).
+- [x] Log each delegation (agent, tier, token counts from the Task result) to `~/.claude/switcharoo.jsonl` via a PostToolUse hook (`hooks/hooks.json` + `scripts/log-delegation.js`).
 - [x] `scripts/receipts.js` summarizes delegations and estimated quota stretch.
 
 ### Phase 4 - publish

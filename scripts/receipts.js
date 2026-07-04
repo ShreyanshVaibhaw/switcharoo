@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Summarizes ~/.claude/autotier.jsonl: delegations per agent and an estimated
+// Summarizes ~/.claude/switcharoo.jsonl: delegations per agent and an estimated
 // quota stretch vs. running the same tokens on the top tier.
 const fs = require('fs');
 const os = require('os');
@@ -9,7 +9,7 @@ const path = require('path');
 const WEIGHT = { architect: 15, executor: 3, grunt: 1, scout: 1 };
 const TOP = 15;
 
-const file = path.join(os.homedir(), '.claude', 'autotier.jsonl');
+const file = path.join(os.homedir(), '.claude', 'switcharoo.jsonl');
 if (!fs.existsSync(file)) {
   console.log('No delegations logged yet (' + file + ' missing).');
   process.exit(0);

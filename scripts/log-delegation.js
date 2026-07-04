@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-// PostToolUse hook (matcher: Task). Appends one JSONL line per autotier
-// delegation to ~/.claude/autotier.jsonl for the receipts report.
+// PostToolUse hook (matcher: Task). Appends one JSONL line per switcharoo
+// delegation to ~/.claude/switcharoo.jsonl for the receipts report.
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
@@ -22,7 +22,7 @@ process.stdin.on('end', () => {
       tokens: resp.totalTokens ?? resp.usage?.output_tokens ?? null,
     };
     fs.appendFileSync(
-      path.join(os.homedir(), '.claude', 'autotier.jsonl'),
+      path.join(os.homedir(), '.claude', 'switcharoo.jsonl'),
       JSON.stringify(rec) + '\n'
     );
   } catch {
